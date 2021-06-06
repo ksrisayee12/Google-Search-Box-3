@@ -29,6 +29,11 @@
     transition: 0.5s;
     transition-delay: 0.5s;
 }
+.search {
+    width: 0px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
 input {
     font-size: 20px;
     width: 0px;
@@ -42,5 +47,10 @@ input {
     padding: 12px 20px;
 }
 .active .MicIcon{
+    width: 30px;
+}
+.active .search{
+    cursor: pointer;
+    padding: 2px 25px;
     width: 30px;
 }

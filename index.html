@@ -14,8 +14,9 @@
     <div class="BG">
         <div id="searchBox">
             <img src="google.png" alt="GoogleIcon" id="googleIcon">
-            <input type="text" placeholder="Search Google Or Type A URL">
+            <input type="text" placeholder="Search Google Or Type A URL" class="query" value="">
             <img src="mic.png" alt="MicIcon" class="MicIcon">
+            <img src="search.png" alt="SearchIcon" class="search">
         </div>
     </div>
     <script type="text/javascript">
@@ -25,6 +26,14 @@
         googleIcon.onclick = function() {
             searchBox.classList.toggle("active");
         }
+        var query = document.querySelector(".query")
+        var search = document.querySelector(".search")
+
+        search.onclick = function() {
+            var url = 'https://www.google.com/search?q=' + query.value;
+            window.open(url)
+        }
     </script>
+    <script src="sketch.js"></script>
 </body>
 </html>
